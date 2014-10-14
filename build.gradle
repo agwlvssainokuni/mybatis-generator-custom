@@ -1,0 +1,20 @@
+apply plugin: "java"
+apply plugin: "eclipse"
+
+version = "1.0"
+
+repositories { mavenCentral() }
+
+ext {
+	versionMyBatisGenerator = "1.3.2"
+}
+
+dependencies {
+	compile "org.mybatis.generator:mybatis-generator-core:${versionMyBatisGenerator}"
+}
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"

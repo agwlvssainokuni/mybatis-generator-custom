@@ -70,7 +70,7 @@ $ mvn mybatis-generator:generate
 
 ```bash:COMMAND
 $ cd mybatis-generator-custom
-$ mvn clean compile install
+$ gradle clean publishToMavenLocal
   => Installed to ~/.m2/repository/cherry/mybatis-generator-custom/0.0/mybatis-generator-custom-0.0.jar
 ```
 

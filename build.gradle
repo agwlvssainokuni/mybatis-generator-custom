@@ -1,4 +1,5 @@
 apply plugin: "java"
+apply plugin: "maven-publish"
 apply plugin: "eclipse"
 
 version = "0.0"
@@ -20,3 +21,12 @@ targetCompatibility = 1.6
 
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
+
+publishing {
+	publications {
+		maven(MavenPublication) {
+			groupId "cherry"
+			from components.java
+		}
+	}
+}
